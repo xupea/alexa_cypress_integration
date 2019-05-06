@@ -1,0 +1,82 @@
+APP Start
+            app_management_callback 21
+                                      app_management_callback 0
+                                                               construct_gadget_eir: constructing eir data with gadget name: Corbit
+                                                   add_gadget_name_to_eir
+add_gadget_uuid128_to_eir
+add_gadget_pid_vid_to_eir
+
+EIR: 07 09 43 6f 72 62 69 74 11 06 b7 16 68 25 d1 5a 94 9f ed 4e 3a 98 b3 d2 88 60 0b ff 31 01 00 00 71 01 10 15 15 fe 00
+spp_rfcomm_start_server: rfcomm_create Res: 0x0  Port: 0x0002
+                                                             set_sdp_db, pid=0, vid=305
+wiced_bt_sdp_db_init - Success
+app_management_callback 20
+                          app_management_callback 20
+                                                    app_management_callback 9
+                                                                             app_management_callback 8
+                      BTM_PAIRING_IO_CAPABILITIES_REQUEST_EVT bda 24 4c e3 3a 78 56
+    app_management_callback 4
+                             app_management_callback 11
+                                                       Pairing Complete: 0
+                                                                          app_management_callback 18
+                    NVRAM ID:80 written :0 bytes result:41
+                                                          app_management_callback 12
+    Encryption Status Event: bd (24 4c e3 3a 78 56 ) res 0
+                                                          spp_rfcomm_control_callback : Status = 0, port: 0x0002  SCB state: 0  Srv: 0x0002  Conn: 0x0000
+                                                                         RFCOMM Connected  isInit: 0  Serv: 0x0002   Conn: 0x0002 24 4c e3 3a 78 56
+                                                                    spp_connection_up_callback handle:2 address:24 4c e3 3a 78 56
+                                                  rfcomm_data: len:42 handle 2 data f0-f1)
+          spp_session_data: len:42, total: 42 (session 2 data f0-f1)
+
+Decoding Directive:
+data length = 42:
+0xf0
+0x 2
+0x 0
+0x 1
+0x a
+0x21
+0x a
+0x1b
+0x a
+0x f
+0x41
+0x6c
+0x65
+0x78
+0x61
+0x2e
+0x44
+0x69
+0x73
+0x63
+0x6f
+0x76
+0x65
+0x72
+0x79
+0x12
+0x 8
+0x44
+0x69
+0x73
+0x63
+0x6f
+0x76
+0x65
+0x72
+0x12
+0x 2
+0x a
+0x 0
+0x 9
+0xb3
+0xf1
+decode directive - Success
+name = SetIndicator, namespace=Notifications
+                                            app_management_callback 2
+                                                                     Power mgmt status event: bd (24 4c e3 3a 78 56 ) status:2 hci_status:0
+                                                           app_management_callback 2
+    Power mgmt status event: bd (24 4c e3 3a 78 56 ) status:0 hci_status:0
+                                                                          spp_rfcomm_control_callback : Status = 16, port: 0x0002  SCB state: 2  Srv: 0x0002  Conn: 0x0002
+          spp_connection_down_callback handle:2
